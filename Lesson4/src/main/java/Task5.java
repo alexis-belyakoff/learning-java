@@ -18,7 +18,7 @@ public class Task5 {
         if (scanner.hasNextInt()) {
             int inputNumber = scanner.nextInt();
             System.out.println(inputNumber + " - это " + evenNumber(inputNumber) + " число, " +
-                    "количество цифр = " + countDigit(inputNumber));
+                    "количество цифр = " + countDigits(inputNumber));
 
         } else if (scanner.hasNextLine()) {
             System.out.println("ќшибка! ¬ведите целое число!");
@@ -30,7 +30,7 @@ public class Task5 {
         return number > 0 ? "положительное" : "отрицательное";
     }
 
-    public static int countDigit(int number) {
+    public static int countDigits(int number) {
         int count = 0;
         if (number != 0) {
             while (number != 0) {
