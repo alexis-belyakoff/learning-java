@@ -13,7 +13,7 @@ public class Task8 {
         int result = 1;
 
         for (int i = 1; i < num + 1; i++){
-            result = result * i;
+            result *= i;
         }
         return result;
     }
